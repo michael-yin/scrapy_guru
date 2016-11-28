@@ -59,7 +59,7 @@ First glance
 
 So here is an example product detail page, it is rendered by ``webapp`` mentioned above.
 
-.. image:: http://127.0.0.1:8080/build/html/_images/first_glance.png
+.. image:: http://scrapy-guru.readthedocs.io/en/latest/_images/first_glance.png
 
 Now according to the task list of the doc, we need to extract product title and desc from the product detail page
 
