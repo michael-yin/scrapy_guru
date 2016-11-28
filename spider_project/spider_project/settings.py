@@ -14,12 +14,19 @@ BOT_NAME = 'spider_project'
 SPIDER_MODULES = ['spider_project.spiders']
 NEWSPIDER_MODULE = 'spider_project.spiders'
 
+FEED_FORMAT = "json"
+FEED_URI = 'output/%(name)s_%(time)s.json' # % (time.strftime("%Y%m%d_%H%M%S"))
+
+# If you run webapp in another port, you sould config it here
+WEB_APP_PREFIX = "http://127.0.0.1:8000/"
+
+STATS_DUMP = False
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'spider_project (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -64,9 +71,9 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'spider_project.pipelines.SomePipeline': 300,
-#}
+ITEM_PIPELINES = {
+    # 'spider_project.pipelines.SpiderProjectPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html

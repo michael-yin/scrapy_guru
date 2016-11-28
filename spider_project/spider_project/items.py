@@ -10,5 +10,5 @@ import scrapy
 
 class SpiderProjectItem(scrapy.Item):
     # define the fields for your item here like:
-    key = scrapy.Field()
+    taskid = scrapy.Field()
     data = scrapy.Field()
