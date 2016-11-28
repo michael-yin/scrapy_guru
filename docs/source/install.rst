@@ -6,7 +6,7 @@ Installation guide
 Clone the project
 --------------------
 
-``git clone the repo from github``
+``git clone https://github.com/michael-yin/scrapy_guru.git``
 
 --------------------
 Virtual environment
@@ -43,7 +43,7 @@ When you assign port you can launch two servic now, remember you need to open at
     ./manage.py runserver 8000
 
 Config spider_project
-====================
+======================
 
 ::
 

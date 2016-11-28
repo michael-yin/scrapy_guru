@@ -1,5 +1,5 @@
 ==================================
-How to enhance your terminal shell
+Enhance your terminal shell
 ==================================
 
 ---------

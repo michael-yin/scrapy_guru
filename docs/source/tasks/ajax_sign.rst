@@ -40,4 +40,19 @@ You found out that the ajax url used ``sign`` in the url but you have no idea ho
 
 The final data should be::
 
+    [{
+        "data": {
+            "price": "$ 20.00",
+            "description": ["55% cotton, 40% polyester, 5% spandex.", "Imported", "Art.No. 85-8023"],
+            "title": "Congratulations"
+        },
+        "taskid": "ajax_sign"
+    }]
 
+------------------
+Advanded
+------------------
+
+.. note::
+
+    Learn how to pretty print minified js and debug the minified js, :ref:`chrome-web-tools`

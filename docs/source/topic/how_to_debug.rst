@@ -19,6 +19,6 @@ The spider may raise exception when working due to the different html structure 
 PDB
 --------------------
 
-I do not understand why scrapy recommend pdb over scrapy shell, but in my opinion pdb is the best debuging tool when developing spider.
+I do not understand why scrapy not recommend pdb over scrapy shell, in my opinion pdb is the best debuging tool when developing spider.
 
-You can set breakpoint, conditional breakpoint in spider, inspect variable in pdb shell, and print traceback, which make debug work easier. Somebody might not know ``ipdb``. I must say ipdb add some more usefull feature to pdb and it is worthile to give it a try.
+You can set breakpoint, conditional breakpoint in spider, inspect variable in pdb shell, and print traceback, which make debug work easier. Somebody might not know ``ipdb``. I must say ipdb add some more usefull feature to ``pdb`` and it is worthile to give it a try.

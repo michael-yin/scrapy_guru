@@ -1,5 +1,7 @@
+.. _mitmproxy:
+
 ====================
-Mitmproxy
+Mitmproxy Note
 ====================
 
 --------------------
@@ -53,7 +55,7 @@ You can write filter expression to make mitmproxy filter the request based on th
 You can give it a try and I promise you will be surprised.
 
 -------------------------------------------------------
-One single note if you want to try mitmproxy
+If you want to analyze https
 -------------------------------------------------------
 
 When you start to use mitmproxy, it is stronglly recommened to install the CA certificate before you start because if you did not install the CA certificate you can not make mitmproxy inspect https request.

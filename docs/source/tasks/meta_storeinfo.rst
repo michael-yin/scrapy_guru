@@ -38,5 +38,12 @@ https://doc.scrapy.org/en/latest/topics/request-response.html#passing-additional
 
 The final data should be::
 
-    pass
+    [{
+        "data": {
+            "price": "$ 12.99",
+            "description": ["55% cotton, 40% polyester, 5% spandex.", "Imported", "Art.No. 85-8023"],
+            "title": "MAMA Jersey Top"
+        },
+        "taskid": "meta_storeinfo"
+    }]
 

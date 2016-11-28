@@ -2,6 +2,8 @@
 Enhance your browser
 ======================
 
+.. _chrome-incognito:
+
 --------------------
 Incognito mode
 --------------------
@@ -9,6 +11,8 @@ Incognito mode
 incognito mode is also called private mode in some browser. In this mode the browser will not send the cookies saved in normal mode , and when you open a new one, it have no cookies saved. This property make it very easy for spider development.
 
 Because at sometime, we need to find out specific value in cookie to make spider to work, in incognito mode we can better check the value and got to know how the website might work when spider crawling from a *fresh start*.
+
+.. _chrome-xpath-css:
 
 -----------------------------------------------
 How to quickly test my xpath or css expression
@@ -25,6 +29,8 @@ Here is how you use it. Press ``ctrl+shift+x`` to open XPath Helper, and you can
     What you should concern here is that in some cases the xpath espression which indeed work in browser can not work on raw html becuase some DOM element might been modified by js, so please test it in scrapy shell before write it in spider code.
 
 If you do not want to install extention to make this done, google chrome have built-in support to query xpath and css expression. Take a look at ``$()`` and ``$x()`` in console.
+
+.. _chrome-web-tools:
 
 -----------------------------------------------
 How to use web dev tools

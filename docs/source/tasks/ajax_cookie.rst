@@ -42,3 +42,19 @@ You need to make sue the url, http header, cookie values are all reasonable.
 
 The final data should be::
 
+    [{
+        "data": {
+            "price": "$ 20.00",
+            "description": ["55% cotton, 40% polyester, 5% spandex.", "Imported", "Art.No. 85-8023"],
+            "title": "Congratulations"
+        },
+        "taskid": "ajax_cookie"
+    }]
+
+------------------
+Advanded
+------------------
+
+.. note::
+
+    When dealing with cookies in browser, it seems a fresh start without any cookie is a good start. see :ref:`chrome-incognito`.

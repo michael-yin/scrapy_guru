@@ -6,7 +6,7 @@ Json extract
 Goal
 ------------------
 
-Recently many websites extract from json data saved in html source. So we need to learn how to handle this situation.
+Recently many websites extract info from json data saved in html source. So we need to learn how to handle this situation.
 
 You should create a spider which have name ``json_extract``
 
@@ -37,4 +37,14 @@ In this task we try to crawl product title and price info. You should find out t
 The real data is saved in json_data.
 
 The final data should be::
+
+    [{
+        "data": {
+            "price": "$ 13.99",
+            "title": "MAMA Jersey Top"
+        },
+        "taskid": "json_extract"
+    }]
+
+
 

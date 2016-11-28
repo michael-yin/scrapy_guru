@@ -44,3 +44,19 @@ You can check the network panel of your brower to find out ajax url the browser 
 
 The final data should be::
 
+    [{
+        "data": {
+            "price": "$ 12.99",
+            "title": "MAMA Jersey Top"
+        },
+        "taskid": "ajax_header"
+    }]
+
+
+------------------
+Advanded
+------------------
+
+.. note::
+
+    Actually you can use some proxy tools to help you analyze http request easier, visit :ref:`mitmproxy`.

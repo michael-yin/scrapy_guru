@@ -42,12 +42,19 @@ You can check the network panel of your brower to find out ajax url the browser 
 
 The final data should be::
 
-    pass
+    [{
+        "data": {
+            "price": "$ 12.99",
+            "title": "MAMA Jersey Top"
+        },
+        "taskid": "ajax_extract"
+    }]
 
 ------------------
 Advanded
 ------------------
 
-:doc:`topic/mitmproxy`
-    How to make you analyze http request easier.
+.. note::
+
+    You must be able to use tools of browser to analyze http request. see :ref:`chrome-web-tools`.
 
