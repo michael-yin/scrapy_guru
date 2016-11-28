@@ -1,11 +1,6 @@
-===============
-README
-===============
+This project is aimed to help newbie developer quickly learn how to develop spider by providing some example and solution. You can learn a lot of skills needed when developing spider after you get through all taskls of this project.
 
-create scrapy projet::
+Please read the doc of this project to get started.
 
-    scrapy startproject tutorial
+http://scrapy-guru.readthedocs.io/en/latest/index.html
 
-~/virtualenvs/xueqiu/lib/python2.7/site-packages/django/bin/django-admin.py startproject xueqiu
-./manage.py startapp southtut
-CREATE DATABASE sentry CHARACTER SET utf8 COLLATE utf8_general_ci;
