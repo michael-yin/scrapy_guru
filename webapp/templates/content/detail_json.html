@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% load static from staticfiles %}
+{% block title %}Product detail{% endblock %}
+
+{% block css %}
+<link href="{% static 'css/detail.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block jslink %}
+<script>
+requirejs(['content/detail_json']);
+</script>
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid">
+    <div class="content-wrapper">   
+        <div class="item-container">    
+            <div class="container"> 
+                    <div class="product col-md-3 service-image-left">
+                        <img id="item-display" src="{% static 'img/hm_1.jpg' %}" alt=""></img>
+                    </div>
+                    
+                    <div class="container service1-items col-sm-2 col-md-2 pull-left">
+                        <center>
+                            <a id="item-1" class="service1-item">
+                                <img src="{% static 'img/hm_1.jpg' %}" alt=""></img>
+                            </a>
+                            <a id="item-2" class="service1-item">
+                                <img src="{% static 'img/hm_2.jpg' %}" alt=""></img>
+                            </a>
+                            <a id="item-3" class="service1-item">
+                                <img src="{% static 'img/hm_3.jpg' %}" alt=""></img>
+                            </a>
+                        </center>
+                    </div>
+                    
+                <div class="col-md-7">
+                    <div class="product-title">Haha</div>
+                    <div class="product-desc">CONSCIOUS. Top in soft organic cotton jersey with 3/4-length sleeves. Gathers at side seams for improved fit.
+                    </div>
+                    <div class="product-rating"><i class="fa fa-star gold"></i> <i class="fa fa-star gold"></i> <i class="fa fa-star gold"></i> <i class="fa fa-star gold"></i> <i class="fa fa-star-o"></i> </div>
+                    <hr>
+                    <div class="product-price">You are wrong!</div>
+                    <hr>
+                    <div class="btn-group cart">
+                        <button type="button" class="btn btn-success">
+                            Add to cart 
+                        </button>
+                    </div>
+                    <div class="btn-group wishlist">
+                        <button type="button" class="btn btn-danger">
+                            Add to wishlist 
+                        </button>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="container-fluid">       
+            <div class="col-md-12 product-info">
+                    <ul id="myTab" class="nav nav-tabs nav_tabs">
+                        
+                        <li class="active"><a href="#service-one" data-toggle="tab">DESCRIPTION</a></li>
+                        <li><a href="#service-two" data-toggle="tab">PRODUCT INFO</a></li>
+                        <li><a href="#service-three" data-toggle="tab">REVIEWS</a></li>
+                        
+                    </ul>
+                <div id="myTabContent" class="tab-content">
+                        <div class="tab-pane fade in active" id="service-one">
+                            <section class="container product-info">
+                                <li>55% cotton, 40% polyester, 5% spandex.</li>
+                                <li>Imported</li>
+                                <li>Art.No. 85-8023</li>
+                            </section>
+                        </div>
+                    <div class="tab-pane fade" id="service-two">
+                        
+                        <section class="container">
+                                
+                        </section>
+                        
+                    </div>
+                    <div class="tab-pane fade" id="service-three">
+                                                
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script id="json_data" type="application/json">
+    {"price": "$ 13.99", "title": "MAMA Jersey Top"}
+</script>
+
+{% endblock %}
