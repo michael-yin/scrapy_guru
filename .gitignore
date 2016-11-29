@@ -1,6 +1,3 @@
-docs/build
-
-
 spider_project/runall.sh
 
 *.py[cod]

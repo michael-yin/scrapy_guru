@@ -1,3 +1,5 @@
+.. _task_basic_extract:
+
 ==================
 Basic extract
 ==================

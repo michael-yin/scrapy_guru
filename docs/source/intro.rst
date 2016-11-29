@@ -4,15 +4,20 @@
 Intro
 =============
 
-I have been developing spider project based on scrapy for almost 3+ years and have extracted info from so many different websites that need to be processed in different ways. 
+There is no good tutorial which can show us different ways to develop spider or use tool which can speed up the spider development. So that is why I created this project and hope this might save you a lot of time when you start to write spider.
 
-However, there is no good tutorial which can show us different ways to develop or use tool which can speed up the spider development. So that is why I created this project and hope this might save you a lot of time when you start to write spider.
+This project is aimed to help newbie spider developer quickly learn how to develop spider by providing some example and solution. You can get a lot of skills needed when developing spider after you get through all taskls of this project.
+
+The common drawbacks of scrapy tutorials is that the target website they are crawing might change their html structure after a time, so the code will not work at that time. Which might confuse people. That is why I implemented webapp in this project.
+
 
 --------------------
 Platform
 --------------------
 
 OSX, Linux, python 2.7+, python 3.4+
+
+Python version will not be a problem for us anymore.
 
 --------------------
 Workflow
@@ -61,7 +66,9 @@ So here is an example product detail page, it is rendered by ``webapp`` mentione
 
 .. image:: _images/first_glance.png
 
-Now according to the task list of the doc, we need to extract product title and desc from the product detail page
+Now according to the `task basic_extract`_ in the doc, we need to extract product title and desc from the product detail page
+
+.. _basic_extract: http://scrapy-guru.readthedocs.io/en/latest/tasks/basic_extract.html
 
 Here is part of spider::
 
@@ -82,5 +89,5 @@ Here is part of spider::
             item["data"] = data
             yield item
 
-And then we run the spider, the spider will start to crawl from the ``entry`` and it will check the data scraped. if the data have some mistake, it will give the detail of the error and help you get the spider work as expect.
+We can run the spider now, the spider will start to crawl from the ``self.entry`` and it will check the data scraped automatically. if the data scraped have some mistake, it will give the detail of the error and help you get the spider work as expect.
 
