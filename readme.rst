@@ -9,6 +9,12 @@ This project is aimed to help newbie spider developer quickly learn how to devel
 The common drawbacks of scrapy tutorials is that the target website they are crawing might change their html structure after a time, so the code will not work at that time. Which might confuse people. That is why I implemented webapp in this project.
 
 --------------------
+Doc
+--------------------
+
+http://scrapy-guru.readthedocs.io/en/latest/index.html
+
+--------------------
 Support Platform
 --------------------
 
@@ -24,7 +30,7 @@ Please click the image for better resolution.
 
 .. image:: http://scrapy-guru.readthedocs.io/en/latest/_images/scrapy_tuto.png
     :height: 600px
-    :width: 800 px
+    :width: 800px
 
 --------------------
 Project structure
