@@ -63,9 +63,7 @@ So here is an example product detail page, it is rendered by ``webapp`` mentione
 
 .. image:: http://scrapy-guru.readthedocs.io/en/latest/_images/first_glance.png
 
-Now according to the `task link_basic_extract`_ in the doc, we need to extract product title and desc from the product detail page
-
-.. _link_basic_extract: http://scrapy-guru.readthedocs.io/en/latest/tasks/basic_extract.html
+Now according to the `task <http://scrapy-guru.readthedocs.io/en/latest/tasks/basic_extract.html>`_ in the doc, we need to extract product title and desc from the product detail page
 
 Here is part of spider code::
 
