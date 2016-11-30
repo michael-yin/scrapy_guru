@@ -16,8 +16,6 @@ If you have no idea what virtual environment is, please take look at https://vir
 
 After you created virtual env and activated it, just ``pip install -r requirements.txt`` to install the packages needed
 
-Now you are done with installation.
-
 --------------------
 Config
 --------------------
