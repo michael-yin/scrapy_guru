@@ -8,23 +8,25 @@ Goal
 
 Recently many websites get product info through ajax request so it make sense for us to quickly figure out how it works and find a way to get the real data.
 
-You should create a spider which have name ``ajax_extract``
-
-Once you finish the coding just run ``scrapy crawl ajax_extract --loglevel=INFO`` to check the output
+If you have no idea what ajax is, read `it <http://www.w3schools.com/xml/ajax_intro.asp>`_
 
 ------------------
 Entry
 ------------------
 
-Remember to change the port number if it is not 8000
+If you have no idea what entry and taskid is, check :ref:`before_start`
 
-http://127.0.0.1:8000/content/detail_ajax
+Remember to config ``WEB_APP_PREFIX`` which located in spider_project/spider_project/settings.py
+
+Entry::
+
+    content/detail_ajax
 
 ------------------
-taskid
+Taskid
 ------------------
 
-taskid::
+Taskid::
 
     ajax_extract
 
@@ -34,11 +36,11 @@ Detail of task
 
 In this task we try to crawl product title and price info. You should find out that the value in html is not the one you see in your brower.
 
-The real data is fetched by ajax request.
-
-You can check the network panel of your brower to find out ajax url the browser used and try to implement it in your spider.
+You can check the network panel of your brower to filter out ajax url the browser used and try to implement it in your spider. You should yield a request in parse_entry_page method to minic ajax request.
 
 .. image:: ../_images/ajax_extract.png
+
+Once you finish the coding just run ``scrapy crawl ajax_extract --loglevel=INFO`` to check the output
 
 The final data should be::
 
@@ -57,4 +59,3 @@ Advanded
 .. note::
 
     You must be able to use tools of browser to analyze http request. see :ref:`chrome-web-tools`.
-

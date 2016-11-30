@@ -8,23 +8,27 @@ Goal
 
 It is importtant to analyze cookies of http request in many cases
 
-You should create a spider which have name ``ajax_cookie``
+If you have no idea what cookie is , read `it <http://www.w3schools.com/js/js_cookies.asp>`_
 
-Once you finish the coding just run ``scrapy crawl ajax_cookie --loglevel=INFO`` to check the output
+If you are using chrome, try visiting chrome://settings/cookies , then you can inspect all cookies in your browser.
 
 ------------------
 Entry
 ------------------
 
-Remember to change the port number if it is not 8000
+If you have no idea what entry and taskid is, check :ref:`before_start`
 
-http://127.0.0.1:8000/content/detail_cookie
+Remember to config ``WEB_APP_PREFIX`` which located in spider_project/spider_project/settings.py
+
+Entry::
+
+    content/detail_cookie
 
 ------------------
-taskid
+Taskid
 ------------------
 
-taskid::
+Taskid::
 
     ajax_cookie
 
@@ -34,11 +38,11 @@ Detail of task
 
 In this task we try to crawl product title, product description, price info.
 
-You should be concern that the description is in the html, but the title and price info should be given by ajax. 
-
 After some tests, you might find out it is hard to make the spider get the data through ajax, so you need to dive into the detail of the ajax request.
 
-You need to make sue the url, http header, cookie values are all reasonable.
+You need to make sure the url, http header, cookie values are all reasonable.
+
+Once you finish the coding just run ``scrapy crawl ajax_cookie --loglevel=INFO`` to check the output
 
 The final data should be::
 
