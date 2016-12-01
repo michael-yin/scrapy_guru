@@ -55,4 +55,4 @@ Advanded
 
 .. note::
 
-    Learn how to pretty print minified js and debug the minified js, :ref:`chrome-web-tools`
+    Learn how to pretty print minified js and debug the minified js, :ref:`chrome-debug-minified-js`

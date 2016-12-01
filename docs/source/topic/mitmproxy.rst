@@ -1,7 +1,7 @@
 .. _mitmproxy:
 
 ====================
-Mitmproxy Note
+Mitmproxy
 ====================
 
 --------------------
@@ -30,18 +30,12 @@ As we can see, mitmproxy has no gui interface for newbie user to inspect http re
 How to use mitmproxy to speed the development of spider
 -------------------------------------------------------
 
-Terminal multiplexer
+Terminal
 =====================
 
-If you have experience with tmux or something like this, you should know that the terminal multiplexer can make you switch easily between several programs in one terminal. And this patten can make you focus on the work and make you more effieicent.
+Mitmproxy work fine in my terminal env and I can quickly switch between tools which used in spider deveopment. You can read :ref:`enhance_terminal`.
 
-So we can run mitmproxy in one of the panel, debug the http request, and start to debug the code quickly after finding something.
-
-Here is the screenshot of my workspace.
-
-.. image:: ../_images/mitmproxy.png
-
-You can see I have opened a lot of panels in single one tmux window, I can quickly switch between them and do not need to jump out my favorate terminal env.
+In mitmproxy I can quickly check content of http requests by entering some key. 
 
 Filter
 =====================

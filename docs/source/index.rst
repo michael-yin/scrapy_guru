@@ -41,7 +41,6 @@ Advanced topic
 
     topic/chrome
     topic/zaw
-    topic/scrapy_command
     topic/how_to_debug
     topic/mitmproxy
 
@@ -51,11 +50,8 @@ Advanced topic
 :doc:`topic/zaw`
     How to enhance your terminal shell.
 
-:doc:`topic/scrapy_command`
-    Scrapy command you should master.
-
 :doc:`topic/how_to_debug`
-    How to debug your scrapy spider.
+    How to troubleshoot your scrapy spider.
 
 :doc:`topic/mitmproxy`
     How to inspect your http request.
