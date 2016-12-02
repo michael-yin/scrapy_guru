@@ -15,6 +15,8 @@ urlpatterns = [
     url(r'^detail_ajax$', views.detail_ajax, name='detail_ajax'),
     url(r'^ajaxdetail$', views.ajaxdetail, name='ajaxdetail'),
 
+    url(r'^detail_regex$', views.detail_regex, name='detail_regex'),
+
     url(r'^detail_json$', views.detail_json, name='detail_json'),
 
     url(r'^detail_header$', views.detail_header, name='detail_header'),
@@ -25,4 +27,8 @@ urlpatterns = [
 
     url(r'^detail_sign$', views.detail_sign, name='detail_sign'),
     url(r'^ajaxdetail_sign$', views.ajaxdetail_sign, name='ajaxdetail_sign'),
+
+    url(r'^list_basic/(?P<page>[0-9]+)$', views.list_basic, name='list_basic'),
+    url(r'^list_basic/detail/(?P<sku>[0-9]+)$', views.list_basic_detail, name='list_basic_detail'),
+
 ]

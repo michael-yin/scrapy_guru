@@ -1,11 +1,14 @@
 import random
 import string
 import hashlib
+import json
+import os.path
+import re
 
 from django.http import JsonResponse, HttpResponseForbidden, HttpResponse
 from django.shortcuts import render, render_to_response
 from django.core.cache import cache
-
+from django.conf import settings
 from django.template import loader
 
 def detail_basic(request):
@@ -41,6 +44,11 @@ def detail_json(request):
         "content/detail_json.html",
     )
 
+
+def detail_regex(request):
+    return render_to_response(
+        "content/detail_regex.html",
+    )
 
 
 def detail_header(request):
@@ -132,6 +140,61 @@ def ajaxdetail_sign(request):
         }
     )
     return response
+
+def list_basic(request, page):
+    pagenum = int(page)
+    num = pagenum - 1
+    start_index = num * 10
+    end_index = start_index + 10
+    ls = json.loads(
+        open(os.path.join(settings.BASE_DIR, "content/data/ls.json"), "r").read()
+    )
+    filter_ls = ls[start_index:end_index + 1]
+
+    #change url
+    for info in filter_ls:
+        url = info["url"]
+        sku = re.findall("productpage.(\d+).html", url)[0]
+        new_url = "/content/list_basic/detail/" + sku
+        info["url"] = new_url
+
+    context = {}
+    page_dict = {
+        "page": pagenum,
+        "pages": (len(ls) / 10) + 1
+    }
+    page_json = json.dumps(page_dict)
+    context["page_json"] = page_json
+    context["filter_ls"] = filter_ls
+
+    return render_to_response(
+        'content/list_basic.html',
+        context,
+    )
+
+def list_basic_detail(request, sku):
+    ls = json.loads(
+        open(os.path.join(settings.BASE_DIR, "content/data/ls.json"), "r").read()
+    )
+    info = filter(lambda x: sku in x["url"], ls)[0]
+    context = {}
+    context["info"] = info
+
+    return render_to_response(
+        'content/list_basic_detail.html',
+        context,
+    )
+
+
+
+
+
+
+
+
+
+
+
 
 
 
