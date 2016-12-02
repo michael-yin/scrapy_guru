@@ -16,12 +16,12 @@ _encoder = ScrapyJSONEncoder()
 
 logger = logging.getLogger('SpiderProjectPipeline')
 
-def compare(item_json, json_data):
+def compare_single(item_json, json_data):
     """
     Compare the two json data and return list which contains the wrong value
     """
-    item_json_data = item_json[0]["data"]
-    json_data_data = json_data[0]["data"]
+    item_json_data = item_json["data"]
+    json_data_data = json_data["data"]
 
     output = []
     for key, value in json_data_data.items():
@@ -52,50 +52,28 @@ class SpiderProjectPipeline(object):
         with open(file_path) as f:
             json_data = json.loads(f.read())
 
-        item_json = json.loads(_encoder.encode([item]))
-        cmp_ls = compare(item_json, json_data)
+        item_json = json.loads(_encoder.encode(item))
+        if len(json_data) == 1:
+            cmp_ls = compare_single(item_json, json_data[0])
+        else:
+            # if the target json_data is a dataset, just pick the ong based
+            # on sku
+            if "sku" not in item["data"] or not item["data"]["sku"]:
+                raise Exception("sku lost in item returned by spider")
+
+            target_json_data = filter(
+                lambda x:x["data"]["sku"] == item["data"]["sku"], json_data)
+            if not target_json_data:
+                raise Exception("sku wrong value, please check the doc")
+            target_json_data = target_json_data[0]
+            cmp_ls = compare_single(item_json, target_json_data)
+
         if cmp_ls:
-            logger.info("field below have some wrong value")
+            logger.info("Field below have some wrong value")
             logger.info("\n".join(cmp_ls))
         else:
-            pass
+            logger.info("Data got is right! Good job")
 
         logger.info(60 * "=")
         return item
-
-# class SpiderProjectPipeline(object):
-#     def process_item(self, item, spider):
-#         logger.info(60 * "=")
-#         # get task url from the taskid
-#         settings = spider.settings
-#         prefix = settings["WEB_APP_PREFIX"]
-
-#         if "taskid" not in item:
-#             raise Exception("taskid lost in item returned by spider")
-
-#         taskid = item["taskid"]
-#         prefix = urljoin(prefix, "task")
-#         url = urljoin(prefix + "/", taskid)
-#         logger.info("start to check on url " + url)
-
-#         if "data" not in item:
-#             raise Exception("data lost in item returned by spider")
-
-#         data = item["data"]
-#         dic = {
-#             "taskid": taskid,
-#             "data": data
-#         }
-#         json_data = json.dumps(dic)
-#         r = requests.post(url, data = {'json':json_data})
-#         resp_json = r.json()
-#         if resp_json["resp"]:
-#             logger.info("OOPS! you have failed " + taskid)
-#             logger.info("\n".join(resp_json["resp"]))
-#         else:
-#             logger.info("Congratulations! you have passed " + taskid)
-#             logger.info("Please continue to get more!")
-
-#         logger.info(60 * "=")
-#         return item
 
