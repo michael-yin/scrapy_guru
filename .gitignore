@@ -1,3 +1,4 @@
 spider_project/runall.sh
 
+.DS_Store
 *.py[cod]
