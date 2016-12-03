@@ -28,6 +28,10 @@ Entry::
 
     content/detail_basic
 
+If your webapp is working on 8000, click the link below
+
+http://127.0.0.1:8000/content/detail_basic
+
 ------------------
 Taskid
 ------------------

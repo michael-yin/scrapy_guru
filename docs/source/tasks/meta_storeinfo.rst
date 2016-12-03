@@ -22,6 +22,10 @@ Entry::
 
     content/detail_header
 
+If your webapp is working on 8000, click the link below
+
+http://127.0.0.1:8000/content/detail_header
+
 ------------------
 Taskid
 ------------------

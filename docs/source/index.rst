@@ -71,6 +71,8 @@ Task List
     tasks/meta_storeinfo
     tasks/ajax_cookie
     tasks/ajax_sign
+    tasks/regex_extract
+    tasks/list_extract
 
 :doc:`tasks/basic_extract`
     Understand the spider workflow and basic xpath syntax.
@@ -93,3 +95,8 @@ Task List
 :doc:`tasks/ajax_sign`
     Learn to analyze minified js and debug code in browser.
 
+:doc:`tasks/regex_extract`
+    Learn to use regex expression to extract info.
+
+:doc:`tasks/list_extract`
+    Learn to extract info from index page and handle pagination.
