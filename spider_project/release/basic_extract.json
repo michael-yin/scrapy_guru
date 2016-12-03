@@ -1,7 +1,3 @@
-[{
-    "data": {
-        "desc": ["55% cotton, 40% polyester, 5% spandex.", "Imported", "Art.No. 85-8023"],
-        "title": ["MAMA Jersey Top"]
-    },
-    "taskid": "basic_extract"
-}]
+[
+{"data": {"desc": ["55% cotton, 40% polyester, 5% spandex.", "Imported", "Art.No. 85-8023"], "title": ["MAMA Jersey Top"]}, "taskid": "basic_extract"}
+]

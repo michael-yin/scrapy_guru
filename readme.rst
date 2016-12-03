@@ -2,7 +2,7 @@
 Intro
 =============
 
-`中文版 <https://github.com/michael-yin/scrapy_guru/blob/master/readme.zh.rst>`_ 
+`中文版请戳这里 <https://github.com/michael-yin/scrapy_guru/blob/master/readme.zh.rst>`_ 
 
 What is contained in this project.
 
@@ -18,16 +18,6 @@ Scrapy doc is a good start for people who want to learn to write spider by using
 
 I did not talk much in componetns of scrapy in this doc. **It is strongly recommend user to read scrapy** `official doc <https://doc.scrapy.org/en/latest/index.html>`_  **first to have a basic understanding such as how to create spider and how to run spider in scrapy. You might can not get some points here if you have no idea how the spider work in scrapy**. If you have question for scrapy, please check it in official doc first.
 
-------------------------
-How to use this project
-------------------------
-
-First, you should take a view of the workflow figure of this project to know how this project work and read `basic concepts <http://scrapy-guru.readthedocs.io/en/latest/#basic-concepts>`_ in doc.
-
-Secondly user will choose one task in online doc of project and get started, it is recommended to solve the task in doc order considering the learning curve. User should create spider as doc asked and run the spider to get the data as expected. There is a sample spider callled ``basic_extract`` in the project, just follow it to create new one and troubleshoot If user can not make the spider to work, you can also check the working spider code in the solution repo which I will push later.
-
-Thirdly user can get some advaned advise or tips in `advanced topic <http://scrapy-guru.readthedocs.io/en/latest/#advanced-topic>`_ , you can learn how to enhance your browser to make it more helpful in spider development or other stuff.
-
 --------------------
 Doc
 --------------------
@@ -39,6 +29,16 @@ Support Platform
 --------------------
 
 OSX, Linux, python 2.7+, python 3.4+
+
+------------------------
+Get started
+------------------------
+
+First, you should take a view of the workflow figure of this project to know how this project work and read `basic concepts <http://scrapy-guru.readthedocs.io/en/latest/#basic-concepts>`_ in doc.
+
+Secondly user will choose one task in online doc of project and get started, it is recommended to solve the task in doc order considering the learning curve. User should create spider as doc asked and run the spider to get the data as expected. There is a sample spider callled ``basic_extract`` in the project, just follow it to create new one and troubleshoot If user can not make the spider to work, you can also check the working spider code in the solution repo which I will push later.
+
+Thirdly user can get some advaned advise or tips in `advanced topic <http://scrapy-guru.readthedocs.io/en/latest/#advanced-topic>`_ , you can learn how to enhance your browser to make it more helpful in spider development or other stuff.
 
 --------------------
 Workflow

@@ -1,7 +1,3 @@
-[{
-    "data": {
-        "price": "$ 13.99",
-        "title": "MAMA Jersey Top"
-    },
-    "taskid": "json_extract"
-}]
+[
+{"data": {"price": "$ 13.99", "title": "MAMA Jersey Top"}, "taskid": "json_extract"}
+]

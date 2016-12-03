@@ -73,6 +73,7 @@ Task List
     tasks/ajax_sign
     tasks/regex_extract
     tasks/list_extract
+    tasks/list_extract_pagination
 
 :doc:`tasks/basic_extract`
     Understand the spider workflow and basic xpath syntax.
@@ -99,4 +100,8 @@ Task List
     Learn to use regex expression to extract info.
 
 :doc:`tasks/list_extract`
-    Learn to extract info from index page and handle pagination.
+    Learn to extract products from list pages.
+
+:doc:`tasks/list_extract_pagination`
+    Learn to extract info from list page and handle pagination.
+

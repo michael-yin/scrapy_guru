@@ -1,14 +1,14 @@
-==================
-List page extract
-==================
+.. _task_list_extract:
+
+===================================
+List page and products extract
+===================================
 
 ------------------
 Goal
 ------------------
 
 In most cases, your spider should start from a list index page and crawl all the product links in the page, so in this task you will learn how to write spider to work in this case.
-
-You should notice that you need also deal with pagination.
 
 ------------------
 Entry
@@ -38,7 +38,7 @@ Taskid::
 Detail of task
 ------------------
 
-There are about 100+ products in all list pages, you should crawl them all, for each product, you should crawl title, price, and sku. Sku can be extracted from product url
+There are **10** products in list page 1, you should extract all product links first, and for each product, you should crawl title, price, and sku. Sku can be extracted from product url
 
 Once you finish the coding just run ``scrapy crawl list_extract --loglevel=INFO`` to check the output
 
@@ -46,23 +46,23 @@ The final data is too long, this is part of it::
 
     [{
         "data": {
-            "price": ["$29.99"],
-            "title": ["Large wooden box-Dusky green"],
-            "sku": "0442019003"
-        },
-        "taskid": "list_extract"
-    }, {
-        "data": {
+            "sku": "0184140017",
             "price": ["$14.99"],
-            "title": ["Textured trinket box-White"],
-            "sku": "0447183001"
+            "title": ["Washed linen table runner-Anthracite grey"]
         },
         "taskid": "list_extract"
     }, {
         "data": {
-            "price": ["$39.99"],
-            "title": ["Cotton terry dressing gown-Light grey"],
-            "sku": "0463014001"
+            "sku": "0184140016",
+            "price": ["$14.99"],
+            "title": ["Washed linen table runner-Grey"]
+        },
+        "taskid": "list_extract"
+    }, {
+        "data": {
+            "sku": "0184124001",
+            "price": ["$19.99"],
+            "title": ["Lace table runner-White"]
         },
         "taskid": "list_extract"
     }]
