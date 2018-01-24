@@ -1,4 +1,4 @@
-**该项目已经不再维护，并且已经被合并** `Scrapy Tutorial Series: Web Scraping Using Python <https://blog.michaelyin.info/scrapy-tutorial-series-web-scraping-using-python/>`_
+**该项目已经不再维护，并且已经被合并** `Scrapy Tutorial Series: Web Scraping Using Python <https://blog.michaelyin.info/scrapy-tutorial-series-web-scraping-using-python/?utm_source=github&utm_medium=website&utm_campaign=scrapy_guru>`_
 
 =======
 介绍
