@@ -1,4 +1,4 @@
-**This project is deprecated and it has been merged into [Scrapy Tutorial Series: Web Scraping Using Python](https://blog.michaelyin.info/scrapy-tutorial-series-web-scraping-using-python/)**
+**This project is deprecated and it has been merged into** [Scrapy Tutorial Series: Web Scraping Using Python](https://blog.michaelyin.info/scrapy-tutorial-series-web-scraping-using-python/)
 
 =============
 Intro
